@@ -3,10 +3,12 @@ on:
   push:
     tags:
       - "v*"
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
       - uses: actions/checkout@v1
       - name: Exit if not on MAIN branch
         if: endsWith(github.ref, 'main') == false

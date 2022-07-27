@@ -4,7 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@v1
+      - name: Checkout Code
+      - uses: actions/checkout@v1
       - name: Exit if not on MAIN branch
         if: endsWith(github.ref, 'releases') == false
         run: echo "You are not on the RELEASES branch" && exit -1
