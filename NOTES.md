@@ -2,3 +2,5 @@
    1.1. Action getting triggered on pushing to master branch.
 
 2. Next added a step to copy `.env.staging` to `.env`. And Showing the `.env` file using CAT command.
+
+3. Created main and releases branch. Going filter workflows by the branch
