@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postversion": "echo 'post-version-called'"
+    "postversion": "echo \"post-version-called\"",
+    "staging-release": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD); if [[ $branch == \"main\" ]]; then npm version patch; else echo \"Error: you are not in main branch\"; fi;",
+    "production-release": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD); if [[ $branch == \"releases\" ]]; then npm version minor; else echo \"Error: you are not in releases branch\"; fi;"
   },
   "repository": {
     "type": "git",
