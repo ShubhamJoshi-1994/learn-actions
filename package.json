@@ -1,0 +1,24 @@
+{
+  "name": "learn-github-actions",
+  "version": "1.0.1",
+  "description": "Learning Github Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "echo 'post-version'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShubhamJoshi-1994/learn-actions.git"
+  },
+  "author": "shubham joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShubhamJoshi-1994/learn-actions/issues"
+  },
+  "homepage": "https://github.com/ShubhamJoshi-1994/learn-actions#readme",
+  "dependencies": {
+    "np": "^7.6.2",
+    "react-native-version": "^4.0.0"
+  }
+}
