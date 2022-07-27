@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postversion": "echo 'post-version'"
+    "postversion": "echo 'post-version-called'"
   },
   "repository": {
     "type": "git",
